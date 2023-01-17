@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordian Component</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+
+  /* Globals */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* accordian */
+  .accordian {
+    margin: 100px auto;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+  }
+
+  /* Item  */
+  .item {
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    border-radius: 5px;
+  }
+
+  /* item box  */
+  .item-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .number {
+    color: #ced4da;
+    font-size: 30px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .drop-down {
+    color: #087f5b;
+    cursor: pointer;
+  }
+
+  .drop-down {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Details  */
+  .item-details {
+    padding: 0 50px;
+    display: none;
+  }
+
+  .item-details-text {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .item-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 20px;
+    color: #868e96;
+  }
+
+  /* Open event  */
+  .open {
+    border-top: 5px solid #087f5b;
+  }
+
+  .open .heading {
+    color: #087f5b;
+  }
+
+  .open .item-details {
+    display: block;
+  }
+</style>
+
+<body>
+  <section class="accordian">
+    <div class="item open">
+      <div class="item-top-row">
+        <div class="left">
+          <p class="number">01</p>
+          <p class="heading">Where are these chairs assembled?</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="drop-down">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
+
+      </div>
+      <div class="item-details">
+
+        <p class="item-details-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque sed assumenda
+          rerum
+          repellat porro esse debitis facilis officiis unde dolorum a minus! Pariatur et quam laudantium ab reiciendis
+          beatae.
+        </p>
+        <ul class="item-details-list">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia necessitatibus.</li>
+          <li>Porro esse debitis facilis officiis unde dolorum a minus! Pariatur et quam laudantium ab reiciendis.</li>
+          <li>Facilis officiis unde dolorum a minus! Pariatur et quam laudantium ab reiciendis.</li>
+          <li>Sit amet consectetur adipisicing elit. Rerum magni autem fuga ut.</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-top-row">
+        <div class="left">
+          <p class="number">02</p>
+          <p class="heading">How long do I have to return my chair?</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="drop-down">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
+
+      </div>
+      <div class="item-details">
+
+        <p class="item-details-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque sed assumenda
+          rerum
+          repellat porro esse debitis facilis officiis unde dolorum a minus! Pariatur et quam laudantium ab reiciendis
+          beatae.
+        </p>
+        <ul class="item-details-list">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia necessitatibus.</li>
+          <li>Porro esse debitis facilis officiis unde dolorum a minus! Pariatur et quam laudantium ab reiciendis.</li>
+          <li>Facilis officiis unde dolorum a minus! Pariatur et quam laudantium ab reiciendis.</li>
+          <li>Sit amet consectetur adipisicing elit. Rerum magni autem fuga ut.</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="item ">
+      <div class="item-top-row">
+        <div class="left">
+          <p class="number">03</p>
+          <p class="heading">Do you ship countries outside EU?</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="drop-down">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
+
+      </div>
+      <div class="item-details">
+
+        <p class="item-details-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque sed assumenda
+          rerum
+          repellat porro esse debitis facilis officiis unde dolorum a minus! Pariatur et quam laudantium ab reiciendis
+          beatae.
+        </p>
+        <ul class="item-details-list">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia necessitatibus.</li>
+          <li>Porro esse debitis facilis officiis unde dolorum a minus! Pariatur et quam laudantium ab reiciendis.</li>
+          <li>Facilis officiis unde dolorum a minus! Pariatur et quam laudantium ab reiciendis.</li>
+          <li>Sit amet consectetur adipisicing elit. Rerum magni autem fuga ut.</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+  const itemEls = document.getElementsByClassName('item');
+  const dropDownEls = document.getElementsByClassName('drop-down');
+  for (let i = 0; i < itemEls.length; i++) {
+    dropDownEls[i].onclick = function () { itemEls[i].classList.toggle('open') }
+  } 
+</script>
+
+</html>
